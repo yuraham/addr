@@ -1,0 +1,25 @@
+{% extends 'addr/base.html' %}
+
+
+{% block content %}
+<div class="addr">
+    {% if con.published_date %}
+        <div class="date">
+            {{ con.published_date }}
+        </div>
+    {% endif %}
+    <div class="name">
+        <h1>{{ con.name }}</h1>
+    </div>
+    <div>
+        <p>연락처1 : {{ con.num }}</p>
+        {% if con.num2 %}
+            <p>연락처2 : {{ con.num2 }}</p>
+        {% endif %}
+        {% if con.email %}
+            <p>{{ con.email }}</p>
+        {% endif %}
+        <p>작성자 : {{ con.writer }}</p>
+    </div>
+</div>
+{% endblock %}
