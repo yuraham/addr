@@ -2,6 +2,7 @@
 
 
 {% block content %}
+{% if user.is_authenticated or con.secret_addr %}
 <div class="addr">
     {% if con.published_date %}
         <div class="date">
@@ -10,15 +11,14 @@
     {% else %}
         <a class="btn btn-default" href="{% url 'addr:con_publish' pk=con.pk %}">Publish</a>
     {% endif %}
-    {% if user.is_authenticated %}
-        <a class="btn btn-default" href="{% url 'addr:con_edit' pk=con.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <a class="btn btn-default" href="{% url 'addr:con_remove' pk=con.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
-    {% endif %}
+    <a class="btn btn-default" href="{% url 'addr:con_edit' pk=con.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a class="btn btn-default" href="{% url 'addr:con_remove' pk=con.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+    <a class="btn btn-default" href="{% url 'addr:con_secret_addr' pk=con.pk %}"><span class="glyphicon glyphicon-eye-open"></span></a>
     <div class="addr">
         <h1>{{ con.name }}</h1>
     </div>
     <div class="detail">
-        <p>연락처1 : {{ con.num }}</p>
+        <p>연락처 : {{ con.num }}</p>
         {% if con.num2 %}
             <p>연락처2 : {{ con.num2 }}</p>
         {% endif %}
@@ -28,4 +28,7 @@
         <p>작성자 : {{ con.writer }}</p>
     </div>
 </div>
+{% else %}
+    <h3>You cannot access this page without a Login.</h3>
+{% endif %}
 {% endblock %}

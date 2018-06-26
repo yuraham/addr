@@ -10,9 +10,14 @@ class Address(models.Model):
     email = models.EmailField(blank=True, null=True)
     save_date = models.DateTimeField(default=timezone.now())
     published_date = models.DateTimeField(blank=True, null=True)
+    secret_addr = models.BooleanField(default=False)
 
     def publish(self):
         self.published_date = timezone.now()
+        self.save()
+
+    def secret(self):
+        self.secret = True
         self.save()
 
     def __str__(self):
