@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43606c53-c01e-45d9-8965-371ba7b1afbd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/addr/static/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addr/templates/addr/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addr/templates/addr/con_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addr/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addr/templates/addr/con_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addr/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/addr/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addr/templates/blog/addr_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/addr/templates/addr/con_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addr/templates/blog/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addr/static/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/addr/static/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addr/templates/addr/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/addr/templates/addr/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addr/templates/addr/con_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/addr/templates/addr/con_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/addr/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addr/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/addr/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mystie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mystie/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,14 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addr/views.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addr/templates/addr/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -37,8 +32,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addr/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="152">
+              <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -46,49 +41,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mystie/urls.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addr/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="304">
+              <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding>
-                <element signature="e#0#639#1" />
-                <element signature="e#640#681#0" expanded="true" />
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="con_detail.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_detail.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addr/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="con_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="39" lean-forward="true" selection-end-line="12" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addr/templates/addr/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="contact.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addr/static/css/contact.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="con_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="con_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -113,12 +114,16 @@
         <option value="$PROJECT_DIR$/addr/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/addr/templates/blog/con_list.html" />
         <option value="$PROJECT_DIR$/addr/models.py" />
-        <option value="$PROJECT_DIR$/addr/templates/addr/base.html" />
-        <option value="$PROJECT_DIR$/addr/views.py" />
         <option value="$PROJECT_DIR$/addr/templates/addr/con_list.html" />
-        <option value="$PROJECT_DIR$/addr/urls.py" />
         <option value="$PROJECT_DIR$/mystie/urls.py" />
+        <option value="$PROJECT_DIR$/addr/form.py" />
+        <option value="$PROJECT_DIR$/addr/forms.py" />
+        <option value="$PROJECT_DIR$/addr/templates/addr/con_new.html" />
+        <option value="$PROJECT_DIR$/addr/static/css/contact.css" />
+        <option value="$PROJECT_DIR$/addr/urls.py" />
+        <option value="$PROJECT_DIR$/addr/views.py" />
         <option value="$PROJECT_DIR$/addr/templates/addr/con_detail.html" />
+        <option value="$PROJECT_DIR$/addr/templates/addr/base.html" />
       </list>
     </option>
   </component>
@@ -185,7 +190,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="add&#9;FILE&#9;file://D:/mysite/addr/templates/blog/addr_list.html" />
+    <property name="SearchEverywhereHistoryKey" value="vi&#9;FILE&#9;file://D:/mysite/addr/views.py&#10;url&#9;FILE&#9;file://D:/mysite/addr/urls.py&#10;bas&#9;FILE&#9;file://D:/mysite/addr/templates/addr/base.html&#10;add&#9;FILE&#9;file://D:/mysite/addr/templates/blog/addr_list.html" />
     <property name="last_opened_file_path" value="D:/djangogirls" />
   </component>
   <component name="RunDashboard">
@@ -305,41 +310,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addr/static/css/contact.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addr/models.py">
+    <entry file="file://$PROJECT_DIR$/addr/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="171">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addr/templates/addr/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addr/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addr/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -357,15 +333,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="39" lean-forward="true" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="228">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addr/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addr/static/css/contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addr/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addr/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addr/templates/addr/con_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="209">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addr/templates/addr/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
         </state>
       </provider>
     </entry>
