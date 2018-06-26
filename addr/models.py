@@ -22,3 +22,17 @@ class Address(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class AddrMemo(models.Model):
+    contact = models.ForeignKey('addr.Address', related_name='memos')
+    author = models.CharField(max_length=200)
+    text = models.TextField()
+    secret_memo = models.BooleanField(default=False)
+
+    def secret(self):
+        self.secret = True
+        self.save()
+
+    def __str__(self):
+        return self.text

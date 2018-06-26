@@ -9,7 +9,7 @@
         </div>
             <h1><a href="{% url 'addr:con_detail' pk=con.pk %}">{{ con.name }}</a></h1>
             <div class="detail">
-                <p>연락처1 : {{ con.num }}</p>
+                <p>연락처 : {{ con.num }}</p>
                 {% if con.num2 %}
                     <p>연락처2 : {{ con.num2 }}</p>
                 {% endif %}

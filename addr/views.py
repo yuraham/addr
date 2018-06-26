@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Address
+from .models import Address, AddrMemo
 from django.utils import timezone
-from .forms import AddrForm
+from .forms import AddrForm, MemoForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -71,3 +71,16 @@ def con_remove(request, pk):
     return redirect('addr:con_list')
 
 
+@login_required
+def con_memo_new(request, pk):
+    con = get_object_or_404(Address, pk=pk)
+    if request.method == "POST":
+        form = MemoForm(request.POST)
+        if form.is_valid():
+            memos = form.save(commit=False)
+            memos.contact = con
+            memos.save()
+            return redirect('addr:con_detail', pk=con.pk)
+    else:
+        form = AddrMemo()
+    return render(request, 'addr/con_memo_new.html', {'form':form})

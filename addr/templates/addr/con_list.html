@@ -5,7 +5,7 @@
     {% for con in cons %}
     <div class="addr">
         <div class="date">
-            <p>published : {{ con.published_date }}</p>
+            <p>{{ con.published_date }}</p>
         </div>
         <h1><a href="{% url 'addr:con_detail' pk=con.pk %}">{{ con.name }}</a></h1>
     </div>
