@@ -1,0 +1,23 @@
+{% extends 'addr/base.html' %}
+
+
+{% block content %}
+    {% for con in cons %}
+    <div class="addr">
+        <div class="date">
+            <p>created: {{ con.save_date|date:'Y-m-d' }}</p>
+        </div>
+            <h1><a href="{% url 'addr:con_detail' pk=con.pk %}">{{ con.name }}</a></h1>
+            <div class="detail">
+                <p>연락처1 : {{ con.num }}</p>
+                {% if con.num2 %}
+                    <p>연락처2 : {{ con.num2 }}</p>
+                {% endif %}
+                {% if con.email %}
+                    <p>이메일 : {{ con.email }}</p>
+                {% endif %}
+                <p>작성자 : {{ con.writer }}</p>
+            </div>
+    </div>
+    {% endfor %}
+{% endblock %}

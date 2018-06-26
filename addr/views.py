@@ -20,7 +20,6 @@ def con_new(request):
         if form.is_valid():
             con = form.save(commit=False)
             con.writer = request.user
-            con.published_date = timezone.now()
             con.save()
             return redirect('addr:con_detail', pk=con.pk)
     else:
@@ -35,9 +34,25 @@ def con_edit(request, pk):
         if form.is_valid():
             con = form.save(commit=False)
             con.writer = request.user
-            con.published_date = timezone.now()
             con.save()
             return redirect('addr:con_detail', pk=con.pk)
     else:
         form=AddrForm(instance=con)
     return render(request, 'addr/con_edit.html', {'form':form})
+
+
+def con_draft_list(request):
+    cons = Address.objects.filter(published_date__isnull=True).order_by('save_date')
+    return render(request, 'addr/con_draft_list.html', {'cons':cons})
+
+
+def con_publish(request, pk):
+    con = get_object_or_404(Address, pk=pk)
+    con.publish()
+    return redirect('addr:con_detail', pk=pk)
+
+
+def con_remove(request, pk):
+    con = get_object_or_404(Address, pk=pk)
+    con.delete()
+    return redirect('addr:con_list')
